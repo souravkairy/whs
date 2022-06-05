@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.paginationBttns {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBttns a {
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 2px;
+    border: 1px solid #0369a1;
+    color: #000000;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: white;
+    background-color: #0369a1;
+}
+
+.paginationActive a {
+    color: white;
+    background-color: #0369a1;
+}
+
+.paginationDisabled a {
+    color: grey;
+    background-color: grey;
+    display: none;
+}
